@@ -1,2 +1,3 @@
-# linux-note
-linux note for me
+# linux note
+
+*created by zrk, 2023/1/2*
