@@ -1,0 +1,8 @@
+XTerm.termName: xterm-256color
+Xterm*locale: True
+XTerm*foreground: lightgrey
+XTerm*background: black
+
+XTerm*renderFont: True
+XTerm*faceName: MiscFixed
+XTerm*faceSize: 20
