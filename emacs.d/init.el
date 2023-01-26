@@ -1,3 +1,4 @@
+;; run-command C-c C-r as prefix
 (add-to-list 'load-path
 	     (expand-file-name (concat user-emacs-directory "lisp")))
 
@@ -30,13 +31,29 @@
   :commands (lsp lsp-deferred)
   )
 
-(use-package yasnippet
-  :ensure
-  :config
-  (yas-reload-all)
-  (add-hook 'prog-mode-hook 'yas-minor-mode)
-  (add-hook 'text-mode-hook 'yas-minor-mode)
- )
+(require 'init-rust)
+(require 'which-key)
+;(setq which-key-show-early-on-C-h t)
+;(setq which-key-idle-delay 10000)
+;(setq which-key-idle-secondary-delay 0.05)
+(setq which-key-popup-type 'side-window)
+(which-key-setup-side-window-right)
+(which-key-mode)
+
+
+;;eglot config
+(require 'eglot)
+(add-hook 'c-mode-hook 'eglot-ensure)
+(add-hook 'c++-mode-hook 'eglot-ensure)
+;;(use-package yasnippet
+;;  :ensure
+;;  :config
+;;  (yas-reload-all)
+;;  (add-hook 'prog-mode-hook 'yas-minor-mode)
+;;  (add-hook 'text-mode-hook 'yas-minor-mode)
+;; )
+
 
 ;; auto complete the parentheses
 (electric-pair-mode t)
+
