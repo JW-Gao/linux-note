@@ -5,9 +5,10 @@
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes '(tango-dark))
  '(display-line-numbers-type 'relative)
+ '(ede-project-directories '("/home/rat/study/prog_lang/c"))
  '(global-display-line-numbers-mode t)
  '(package-selected-packages
-   '(company-mode rustic which-key exec-path-from-shell yasnippet company rust-mode lsp-mode restart-emacs use-package))
+   '(switch-window treemacs eglot flycheck lsp-ui company-mode rustic which-key exec-path-from-shell yasnippet company rust-mode lsp-mode restart-emacs use-package))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil)
  '(warning-suppress-log-types '((use-package) (use-package)))

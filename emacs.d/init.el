@@ -56,4 +56,12 @@
 
 ;; auto complete the parentheses
 (electric-pair-mode t)
+(column-number-mode t)
 
+(require 'init-treemacs)
+(require 'init-switch-window)
+
+;;(defun p-split-window-right ()
+;;  (interactive)
+;;  (split-window-right 80))
+;;(global-set-key (kbd "C-x 3") 'p-split-window-right)

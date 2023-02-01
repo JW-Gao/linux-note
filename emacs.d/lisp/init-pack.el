@@ -18,18 +18,33 @@
 	company-require-match nil
 	company-minimum-prefix-length 2
 	company-show-numbers t
-	company-tooltip-limit t
+;;	company-tooltip-limit t
 	company-idle-delay 0
 	company-echo-delay 0
 	company-tooltip-offset-display 'scrollbar
+	company-tooltip-align-annotations t ;;for carrying addtional information about the candidate
 	company-begin-commands '(self-insert-command)
 	)
-  (push '(company-semantic :with company-yasnippet) company-backends)
+;;  (push '(company-semantic :with company-yasnippet) company-backends)
   :hook
   ((after-init . global-company-mode))
   ;;:custom
   ;;(company-idle-delay 0.2)
   ;; (company-begin-commands nil) ;; uncomment to disable popup
   )
+
+(use-package 'which-key
+  :ensure
+  )
+
+;;eglot package
+(use-package eglot
+  :config
+  (add-to-list 'eglot-server-programs '((c++-mode c-mode) "clangd"))
+  :hook
+  ((c-mode-hook . eglot-ensure)
+   (c++-mode-hook . eglot-ensure))
+  )
+
 
 (provide 'init-pack)
