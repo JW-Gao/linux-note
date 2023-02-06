@@ -42,9 +42,9 @@
 
 
 ;;eglot config
-(require 'eglot)
-(add-hook 'c-mode-hook 'eglot-ensure)
-(add-hook 'c++-mode-hook 'eglot-ensure)
+;;(require 'eglot)
+;;(add-hook 'c-mode-hook 'eglot-ensure)
+;;(add-hook 'c++-mode-hook 'eglot-ensure)
 ;;(use-package yasnippet
 ;;  :ensure
 ;;  :config

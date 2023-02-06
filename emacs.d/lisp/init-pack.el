@@ -38,13 +38,13 @@
   )
 
 ;;eglot package
-(use-package eglot
-  :config
-  (add-to-list 'eglot-server-programs '((c++-mode c-mode) "clangd"))
-  :hook
-  ((c-mode-hook . eglot-ensure)
-   (c++-mode-hook . eglot-ensure))
-  )
+;;(use-package eglot
+  ;;:config
+  ;;(add-to-list 'eglot-server-programs '((c++-mode c-mode) "clangd"))
+  ;;:hook
+  ;;((c-mode-hook . eglot-ensure)
+   ;;(c++-mode-hook . eglot-ensure))
+  ;;)
 
 
 (provide 'init-pack)
