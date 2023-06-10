@@ -33,18 +33,5 @@
   ;; (company-begin-commands nil) ;; uncomment to disable popup
   )
 
-(use-package 'which-key
-  :ensure
-  )
-
 ;;eglot package
-(use-package eglot
-  :config
-;;  (add-to-list 'eglot-server-programs '((c++-mode c-mode) "clangd"))
-  :hook
-;;  ((c-mode-hook . eglot-ensure)
-;;   (c++-mode-hook . eglot-ensure)
-;;   (rustic-mode . eglot-ensure))
-  )
-
 (provide 'init-pack)
