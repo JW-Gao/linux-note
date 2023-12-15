@@ -1,0 +1,31 @@
+{
+    "editor.fontSize": 16,
+    "editor.cursorBlinking": "solid",
+    "editor.cursorStyle": "block",
+    "update.mode": "none",
+    
+    "editor.fontFamily": "'Cascadia Code PL','Droid Sans Mono', 'monospace', monospace",
+    "editor.fontLigatures": true,
+        
+    "leetcode.endpoint": "leetcode",
+    "leetcode.defaultLanguage": "cpp",
+    "leetcode.workspaceFolder": "/home/rat/alg/leetcode",
+    "leetcode.hint.configWebviewMarkdown": false,
+    "leetcode.editor.shortcuts": [
+        "submit",
+        "test",
+        "solution"
+    ],
+    
+    "extensions.autoCheckUpdates": false,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.lineNumbers": "relative",
+    "leetcode.hint.commandShortcut": false,
+    
+    "explorer.confirmDelete": false,
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "window.zoomLevel": 2,
+    "update.showReleaseNotes": false,
+    "editor.tabSize": 2,
+    "window.menuBarVisibility": "toggle"
+}
