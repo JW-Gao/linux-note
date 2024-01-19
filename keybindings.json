@@ -6,7 +6,7 @@
         "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
     },
     {
-        "key": "alt+-",
+        "key": "alt+,",
         "command": "workbench.action.navigateBack"
     },
     {
